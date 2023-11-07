@@ -27,9 +27,39 @@ namespace Final_Project_Contant_Manager
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello");
+            PersonName.Text = "Bobby Connolly";
 
-            MessageBox.Show("Bye");
+            Address1.Text = "123 Sherbrooke St West";
+
+            Address2.Text = "Apt 5";
+
+            PostalCode.Text = "H3H 2P2";
+           
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //PersonName.Text = string.Empty;
+
+            //Address1.Text = string.Empty;
+
+            //Address2.Text = string.Empty;
+
+            //PostalCode.Text = string.Empty;
+
+
+            foreach (var ctrl in Grid.Children)
+            {
+              
+                if (ctrl is TextBox txt)
+                {
+                    txt.Text = string.Empty;
+                }
+
+            }
+
         }
     }
 }
+;

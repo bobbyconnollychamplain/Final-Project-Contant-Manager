@@ -6,8 +6,17 @@
         xmlns:local="clr-namespace:Final_Project_Contant_Manager"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="345,148,0,0" VerticalAlignment="Top" Height="52" Width="158" Click="Button_Click"/>
+    <Grid Name="Grid">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="258,297,0,0" VerticalAlignment="Top" Height="52" Width="158" Click="Button_Click"/>
+        <TextBox Name="PersonName" HorizontalAlignment="Left" Margin="154,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="28"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="71,90,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="154,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="28"/>
+        <Label Content="Address-1:" HorizontalAlignment="Left" Margin="71,133,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="154,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="28"/>
+        <Label Content="Address-2:" HorizontalAlignment="Left" Margin="71,177,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="PostalCode" HorizontalAlignment="Left" Margin="154,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="28"/>
+        <Label Content="Postal Code:" HorizontalAlignment="Left" Margin="71,226,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="508,297,0,0" VerticalAlignment="Top" Height="52" Width="158" Click="Button_Click_2" />
 
     </Grid>
 </Window>
